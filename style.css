@@ -1,0 +1,105 @@
+:root {
+	--primary-paleBlue: hsl(225, 100%, 94%); /*Pale blue*/
+	--primary-brightBlue: hsl(245, 75%, 52%); /*Bright blue*/
+	--neutral-veryPaleBlue: hsl(225, 100%, 98%);
+	--neutral-desaturatedBlue: hsl(224, 23%, 55%);
+	--neutral-darkBlue: hsl(223, 47%, 23%);
+	--fontSizeParagraph: 16px;
+}
+* {
+	font-family: "Red Hat Display", sans-serif;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-image: url(./images/pattern-background-desktop.svg);
+	background-color: var(--primary-paleBlue);
+	background-position: top left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.cardWrapper {
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.contentWrapper {
+	width: 70%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.desc {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: var(--neutral-desaturatedBlue);
+}
+.planOffer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--neutral-veryPaleBlue);
+	border-radius: 10px;
+	padding: 10px 5px;
+	margin: 20px auto;
+}
+.planOffer .desc {
+	text-align: left;
+	width: 60%;
+}
+.title {
+	color: var(--neutral-darkBlue);
+	font-weight: 700;
+}
+a {
+	color: var(--primary-brightBlue);
+	font-weight: 700;
+	font-size: calc(var(--fontSizeParagraph) * 0.8);
+}
+.btn {
+	width: 100%;
+	border: none;
+	padding: 10px;
+	font-size: calc(var(--fontSizeParagraph) * 0.8);
+	border-radius: 10px;
+	margin: 5px auto;
+	background: none;
+	font-weight: 700;
+}
+.proceed {
+	background-color: var(--primary-brightBlue);
+	color: var(--neutral-veryPaleBlue);
+}
+.cancel {
+	color: var(--neutral-desaturatedBlue);
+}
+.proceed:hover,
+a:hover {
+	filter: opacity(75%);
+	text-decoration: none;
+}
+.cancel:hover {
+	color: var(--neutral-darkBlue);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
