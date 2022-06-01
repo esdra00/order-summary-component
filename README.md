@@ -18,7 +18,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### The challenge
 
-The challenge is to build out this order summary card component and get it looking as close to the design as possible.
+Users should be able to:
+
+-    See hover states for interactive elements
 
 ### Screenshot
 
